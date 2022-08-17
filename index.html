@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
     <link rel="stylesheet" href="css/estilo.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="papiGridI">
     <header>
+      <div data-aos="fade-down">
       <a href="index.html"><img
         class="logo"
         src="img/logoletrablanca-removebg-preview.png"
         alt="logo"
       /></a>
+    </div>
       <div class="menu">
         <nav>
           <ul>
@@ -40,6 +43,7 @@
         <img src="/img/burguermenu.png" alt="imgMenuHamb">
       </div>
     </header>
+    <div data-aos="flip-left">
         <section class="contenedorTituloTexto">
           <h2 class="h2Inicio">Quienes somos</h2>
           <p class="textoInicio">
@@ -58,6 +62,7 @@
             sus exquisitas delicatessens.
           </p>
         </section>
+      </div>
         <section class="contenedorMapaTexto">
           <iframe
             class="mapa"
@@ -84,5 +89,9 @@
     </div>
     <div class="gemeloPie"></div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
