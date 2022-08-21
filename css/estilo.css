@@ -9,74 +9,44 @@ html {
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 .papiGridI {
-  display: grid;
-  grid-template-areas: "header header" "contenedorTituloTexto contenedorMapaTexto" "footer footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 130px auto 30px;
   font-family: "Montserrat", sans-serif;
-  background-image: url(../img/meat-charcuterie-fuet-salami-sausages-with-olives-herbs-wooden-background-top-view_89816-37439.jpg);
-  background-size: cover;
+  /* background-image: url(../img/meat-charcuterie-fuet-salami-sausages-with-olives-herbs-wooden-background-top-view_89816-37439.jpg);
+  background-size: cover; */
   color: rgb(219, 219, 219);
 }
 header {
-  background: linear-gradient(180deg, rgb(0, 0, 0), transparent);
-  grid-area: header;
+  background-color: white;
+}
+.nav-link {
+  color: black;
+  font-size: 1.2rem;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  height: 1.5rem;  
+}
+.nav-link:hover {
+  color: grey;
+}
+.bordeMenu {
+  border-right: black solid 1px;
+}
+.activo {
+  color: grey;
 }
 footer {
   color: rgb(219, 219, 219);
   background: linear-gradient(360deg, rgb(0, 0, 0), transparent);
-  grid-area: footer;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding-bottom: 5px;
 }
 .logo {
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  margin-left: 70px;
-}
-.gemeloLogo {
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  margin-right: 70px;
-}
-.menu {
-  display: inline-block;
-  list-style-type: none;
-  align-self: flex-end;
-  width: 450px;
-  min-width: 450px;
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: rgb(219, 219, 219);
-  font-size: 1.7rem;
-}
-a:hover {
-  opacity: 80%;
-}
-.liMenu {
-  display: inline;
-}
-.inicio,
-.capacitacion,
-.productos,
-.recetas {
-  border-right: 2px rgb(219, 219, 219) solid;
-  padding-right: 4px;
-  padding-left: 2px;
-}
-.contacto {
-  padding-left: 2px;
+  width: 100px;
+  height: 100px;
+  margin: -20px 20px;
 }
 .contenedorTituloTexto {
-  grid-area: contenedorTituloTexto;
   min-width: 350px;
   height: calc(100vh - 130px);
   padding-top: 130px;
@@ -94,7 +64,6 @@ a:hover {
   line-height: 1.6;
 }
 .contenedorMapaTexto {
-  grid-area: contenedorMapaTexto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -119,8 +88,8 @@ a:hover {
   transition: all 0.5s;
 }
 .wpIcon:hover {
- height: 77px;
- width: 66px;
+  height: 77px;
+  width: 66px;
 }
 .face {
   height: 20px;
@@ -145,103 +114,7 @@ a:hover {
   display: inline-block;
   width: 180px;
 }
-@media (max-width: 768px) {
-  .papiGridI {
-    grid-template-areas:
-      "header"
-      "contenedorTituloTexto"
-      "contenedorMapaTexto"
-      "footer";
-    grid-template-columns: 100vw;
-    grid-template-rows: 130px auto auto 30px;
-  }
-  .contenedorTituloTexto {
-    height: 400px;
-    padding-left: 10px;
-    padding-right: 120px;
-  }
-  .contenedorMapaTexto {
-    align-items: center;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .mapa {
-    padding-right: 0%;
-  }
-  .contactoRapido {
-    padding-right: 0%;
-  }
-}
 
-@media (min-width: 480px) {
-
-  .gemeloLogo {
-    opacity: 0%;
-  }
-}
-@media (max-width: 480px) {
-  .papiGridI {
-    grid-template-areas:
-      "header"
-      "contenedorTituloTexto"
-      "contenedorMapaTexto"
-      "footer";
-    grid-template-columns: 100vw;
-    grid-template-rows: 130px auto auto 30px;
-  }
-  .contenedorTituloTexto {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 50px;
-    min-width: 250px;
-  }
-  .contenedorMapaTexto {
-    align-items: center;
-    padding-bottom: 80px;
-    width: 80vw;
-    padding-left: 10vw;
-  }
-  .textoInicio {
-    text-align: center;
-    font-size: 1.4rem;
-  }
-  .logo {
-    width: 200px;
-    height: 200px;
-    margin-left: 10px;
-  }
-  .menu {
-    display: none;
-  }
-  .mapa {
-    padding-right: 0;
-    width: 330px;
-    height: 250px;
-  }
-  .contactoRapido {
-    padding-right: 0;
-  }
-  .gemeloLogo {
-    display: flex;
-    padding-right: 5vw;
-    padding-top: 5vw;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 70px;
-    width: 70px;
-    margin-right: 0px;
-  }
-  .gemeloPie {
-    display: none;
-  }
-  .pie {
-    padding-left: 5vw;
-  }
-  .redes {
-    padding-right: 5vw;
-  }
-}
 
 /*******************************************PRODUCTOS*************************************/
 
@@ -300,9 +173,9 @@ a:hover {
     grid-template-rows: 130px auto auto 30px;
   }
   .contenedorEmbCur {
-height: auto;
-padding-top: 0px;
-padding-bottom: 50px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
   }
   .contenedorEmbFres {
     height: auto;
@@ -355,7 +228,7 @@ padding-bottom: 50px;
   color: white;
   font-size: 1.8rem;
 }
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .papiGridR {
     grid-template-areas:
       "header"
@@ -373,11 +246,11 @@ padding-bottom: 50px;
     padding-bottom: 100px;
   }
 }
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
   .textoRecetas {
     width: auto;
   }
-  }
+}
 
 /*******************************************CAPACITACIÓN**********************************/
 
@@ -461,7 +334,7 @@ padding-bottom: 50px;
   list-style-type: lower-latin;
   padding-left: 300px;
 }
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .papiGridCa {
     grid-template-areas:
       "header header"
@@ -480,10 +353,12 @@ padding-bottom: 50px;
   .texto3Cap {
     font-size: 2rem;
   }
-  .subtitulo1Cap, .subtitulo2Cap {
+  .subtitulo1Cap,
+  .subtitulo2Cap {
     font-size: 2rem;
   }
-  .lista1Cap, .lista2Cap {
+  .lista1Cap,
+  .lista2Cap {
     font-size: 1.5rem;
   }
 }
@@ -529,7 +404,7 @@ padding-bottom: 50px;
     padding-bottom: 10px;
     padding-left: 0px;
   }
-  
+
   .subtitulo1Cap {
     font-size: 2rem;
     padding-bottom: 10px;
@@ -605,7 +480,7 @@ input[type="reset"] {
   background-color: grey;
   border: 1px solid black;
 }
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .papiGridCo {
     grid-template-areas:
       "header"
@@ -620,9 +495,8 @@ input[type="reset"] {
 }
 @media (max-width: 480px) {
   form {
-      margin-left: 10vw;
-      margin-right: 10vw;
-      width: auto;
-    }
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: auto;
   }
-
+}

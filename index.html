@@ -6,43 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="papiGridI">
     <header>
-      <div data-aos="fade-down">
-      <a href="index.html"><img
-        class="logo"
-        src="img/logoletrablanca-removebg-preview.png"
-        alt="logo"
-      /></a>
-    </div>
-      <div class="menu">
-        <nav>
-          <ul>
-            <span class="inicio"
-              ><li class="liMenu"><a href="index.html">Inicio</a></li></span
-            >
-            <span class="productos"
-              ><li class="liMenu"></li><a href="html/productos.html">Productos</a></li></span
-            >
-            <span class="recetas"
-              ><li class="liMenu"><a href="html/recetas.html">Recetas</a></li></span
-            >
-            <span class="capacitacion"
-              ><li class="liMenu"><a href="html/capacitacion.html">Capacitación</a></li></span
-            >
-            <span class="contacto"
-              ><li class="liMenu"><a href="html/contacto.html">Contacto</a></li></span
-            >
-          </ul>
-        </nav>
-      </div>
-      <div class="gemeloLogo">
-        <img src="/img/burguermenu.png" alt="imgMenuHamb">
-      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img
+            class="logo"
+            src="img/logoalmacen-removebg.png"
+            alt="logo"
+          /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto d-block d-flex">
+              <li class="nav-item">
+                <a class="activo bordeMenu nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="bordeMenu nav-link" href="/html/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="bordeMenu nav-link" href="/html/recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="bordeMenu nav-link" href="/html/capacitacion.html">Capacitación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="index.html"><img
+              class="logo opacity-0"
+              src="img/logoalmacen-removebg.png"
+              alt="logo"
+            /></a>
+          </div>
+        </div>
+      </nav> 
     </header>
+    <div>
+      <img class="img-fluid" src="img/meat-charcuterie-fuet-salami-sausages-with-olives-herbs-wooden-background-top-view_89816-37439.jpg" alt="fondo">
+    </div>
     <div data-aos="flip-left">
         <section class="contenedorTituloTexto">
           <h2 class="h2Inicio">Quienes somos</h2>
@@ -93,5 +103,7 @@
     <script>
       AOS.init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
