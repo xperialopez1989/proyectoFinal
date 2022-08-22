@@ -10,48 +10,88 @@ html {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 .papiGridI {
   font-family: "Montserrat", sans-serif;
-  /* background-image: url(../img/meat-charcuterie-fuet-salami-sausages-with-olives-herbs-wooden-background-top-view_89816-37439.jpg);
-  background-size: cover; */
-  color: rgb(219, 219, 219);
 }
 header {
-  background-color: white;
+  color: white;
+  border-bottom: 1px solid olive;
+  padding-bottom: 10px;
+  background: rgb(20,25,22);
+background: linear-gradient(166deg, rgba(20,25,22,1) 0%, rgba(0,0,0,1) 49%);
 }
 .nav-link {
-  color: black;
-  font-size: 1.2rem;
+  color: white;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   height: 1.5rem;  
 }
+.navbar-toggler {
+  background-color: lightgray;
+  margin-right: 20px;
+}
 .nav-link:hover {
-  color: grey;
+  color: lightgray;
 }
 .bordeMenu {
-  border-right: black solid 1px;
+  border-right: olive solid 1px;
 }
 .activo {
-  color: grey;
+  text-decoration:underline;
+}
+.logo {
+  width: 200px;
+  height: 150px;
+}
+.inicioZona1 {
+  color: white;
+  background: rgba(0, 0, 0, 0.4) url(/img/meat-charcuterie-fuet-salami-sausages-with-olives-herbs-wooden-background-top-view_89816-37439.jpg);
+  height: 70vw;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode:color-burn;
+  border-bottom: 1px olive solid;
+}
+.inicioZona1 h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: oblique;
+}
+.inicioZona1 p {
+  font-size: 2rem;
+}
+.inicioZona2 {
+  margin: 100px auto;
+}
+.foto1Zona2 {
+height: 300px;
+width: 500px;
+border-radius: 2px;
+}
+.textoZona2 {
+padding-right: 50px;
+}
+.foto2Zona2 {
+  height: 500px;
+  width: 100%; 
+}
+.inicioZona3 {
+  margin: 100px auto;
+}
+.textoZona3 {
+  padding-left: 50px;
 }
 footer {
   color: rgb(219, 219, 219);
-  background: linear-gradient(360deg, rgb(0, 0, 0), transparent);
+  background: rgb(20,25,22);
+background: linear-gradient(166deg, rgba(20,25,22,1) 0%, rgba(0,0,0,1) 49%);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding-bottom: 5px;
-}
-.logo {
-  width: 100px;
-  height: 100px;
-  margin: -20px 20px;
-}
-.contenedorTituloTexto {
-  min-width: 350px;
-  height: calc(100vh - 130px);
-  padding-top: 130px;
-  padding-left: 50px;
-  padding-right: 250px;
 }
 .h2Inicio {
   text-align: center;
@@ -70,10 +110,10 @@ footer {
   align-items: flex-end;
   row-gap: 10px;
 }
-.mapa {
+/* .mapa {
   padding-right: 50px;
   opacity: 80%;
-}
+} */
 .contactoRapido {
   text-align: center;
   font-size: 1.3rem;
@@ -84,7 +124,7 @@ footer {
   width: 60px;
   position: fixed;
   bottom: 20px;
-  left: 50px;
+  left: 20px;
   transition: all 0.5s;
 }
 .wpIcon:hover {
@@ -114,7 +154,29 @@ footer {
   display: inline-block;
   width: 180px;
 }
+@media (max-width: 767px) {
+  .bordeMenu {
+    border-right: solid 1px transparent;
+  }
+  .inicioZona1 h2 {
+    font-size: 3rem;
+  }
+  .inicioZona1 p {
+    font-size: 1rem;
+  }
+  .logo {
+    margin: -10px 0 -30px 0;
+    width: 150px;
+    height: 115px;
+  }
 
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*******************************************PRODUCTOS*************************************/
 
