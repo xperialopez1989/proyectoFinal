@@ -22,6 +22,7 @@ header {
   display: flex;
   align-items: center;
   height: 1.5rem;
+  transition: all 1s;
 }
 .navbar-toggler {
   background-color: lightgray;
@@ -30,7 +31,6 @@ header {
 .nav-link:hover {
   color: olive;
   filter: blur(0.5px);
-  transition: all 1s;
   transform: scale(1.05);
 }
 .bordeMenu {
@@ -39,15 +39,14 @@ header {
 .activo {
   color: olive;
   filter: blur(0.2px);
-  transition: all 1s;
 }
 .logo {
   width: 200px;
   height: 150px;
+  transition: all 1s;
 }
 .logo:hover {
   filter: blur(1px);
-  transition: all 1s;
   transform: scale(1.05);
 }
 .inicioZona1 {
@@ -63,6 +62,9 @@ header {
   align-items: center;
   background-blend-mode: color-burn;
   border-bottom: 1px olive solid;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .h2Inicio {
   text-align: center;
@@ -87,18 +89,23 @@ header {
   margin: 100px auto;
 }
 .foto1Zona2 {
-  height: 300px;
+  height: 280px;
   width: 500px;
-  border-radius: 2px;
-  margin-bottom: 50px;
+  border-radius: 3px;
 }
 .textoZona2 {
   padding-right: 50px;
 }
-.foto2Zona2 {
+.fondoMedio {
+  background: url(../img/jamoncrudofondonegro.jpg);
   max-height: 550px;
+  min-height: 400px;
   height: auto;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .inicioZona3 {
   margin: 100px auto;
@@ -131,8 +138,7 @@ footer {
   transition: all 0.5s;
 }
 .wpIcon:hover {
-  height: 77px;
-  width: 66px;
+  scale: 1.1;
 }
 .face {
   height: 20px;
@@ -151,12 +157,13 @@ footer {
   display: inline;
   opacity: 80%;
   display: inline-block;
-  width: 180px;
+  width: 200px;
   padding-left: 5px;
 }
 .gemeloPie {
   display: inline-block;
-  width: 180px;
+  width: 200px;
+  padding-right: 5px;
 }
 @media (max-width: 767px) {
   .bordeMenu {
@@ -177,7 +184,7 @@ footer {
     text-align: center;
   }
   .textoZona3 {
-  padding-right: 50px;
+    padding-right: 50px;
   }
   .nav-link {
     font-size: 1.2rem;
@@ -198,7 +205,7 @@ footer {
     font-size: 1.2rem;
   }
   .gemeloPie {
-    display:none
+    display: none;
   }
   .redes {
     margin-right: 20px;
@@ -210,7 +217,6 @@ footer {
 }
 
 /*******************************************PRODUCTOS*************************************/
-
 .contenedorEmbFres {
   height: calc(100vh - 130px);
   padding-top: 130px;
@@ -236,27 +242,27 @@ footer {
   height: 280px;
   width: 450px;
   border-radius: 4px;
+  transition: 1s;
 }
 .imgEmbutidosFrescos:hover {
-  transition: 2s;
   filter: grayscale(60%);
   transform: scale(1.05);
 }
 .textProd {
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: lighter;
   padding-bottom: 20px;
   font-weight: bold;
-  text-shadow: 2px 2px 5px grey;
+  text-shadow: 2px 2px 3px grey;
 }
 .imgEmbutidosCurados {
   height: 280px;
   width: 450px;
   border-radius: 4px;
+  transition: 1s;
 }
 .imgEmbutidosCurados:hover {
-  transition: 2s;
   filter: grayscale(60%);
   transform: scale(1.05);
 }
@@ -264,14 +270,16 @@ footer {
   height: 300px;
   width: 600px;
   border-radius: 4px;
+  transition: 1s;
 }
 .imgEspecial:hover {
-  transition: 2s;
   filter: grayscale(60%);
   transform: scale(1.05);
 }
 @media (max-width: 768px) {
-  .contenedorEmbCur, .contenedorEmbFres, .contenedorEspecial {
+  .contenedorEmbCur,
+  .contenedorEmbFres,
+  .contenedorEspecial {
     height: auto;
     padding-top: 50px;
   }
@@ -280,7 +288,8 @@ footer {
   }
 }
 @media (max-width: 575px) {
-  .imgEmbutidosFrescos, .imgEmbutidosCurados {
+  .imgEmbutidosFrescos,
+  .imgEmbutidosCurados {
     height: 196px;
     width: 315px;
   }
@@ -346,7 +355,7 @@ footer {
   padding-top: 120px;
   padding-right: 10px;
   background-image: url(../img/tablafiambresfondonegro.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   color: white;
@@ -392,10 +401,9 @@ footer {
   .contenedorTextoPpal {
     padding-bottom: 100px;
     height: auto;
-    background: rgba(0, 0, 0, 0.6)
-    url(../img/tablafiambresfondonegro.jpg);
+    background: rgba(0, 0, 0, 0.6) url(../img/tablafiambresfondonegro.jpg);
     background-blend-mode: color-burn;
-    background-size:cover;
+    background-size: cover;
   }
   .texto3Cap {
     font-size: 2rem;
@@ -451,7 +459,7 @@ input[type="submit"] {
   margin-top: 10px;
   margin-left: 80px;
   color: white;
-  background-color:olive;
+  background-color: olive;
   border: 1px solid black;
   font-weight: bold;
 }
@@ -467,10 +475,11 @@ input[type="reset"] {
   font-weight: bold;
 }
 .boton:active {
-transform: translateY(2px);
+  transform: translateY(2px);
 }
 @media (max-width: 768px) {
-  input[type="submit"], input[type="reset"] {
+  input[type="submit"],
+  input[type="reset"] {
     width: 80px;
     font-size: 1.2rem;
   }
