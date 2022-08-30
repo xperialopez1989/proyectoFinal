@@ -1,0 +1,40 @@
+header {
+	color: white;
+	padding-bottom: 10px;
+	background-color: white;
+}
+.nav-link {
+	color: black;
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	height: 1.5rem;
+	transition: all 1s;
+}
+.navbar-toggler {
+	background-color: lightgray;
+	margin-right: 20px;
+}
+.nav-link {
+	&:hover {
+		color: olive;
+		filter: blur(0.5px);
+		transform: scale(1.05);
+	}
+}
+.bordeMenu {
+	border-right: olive solid 1px;
+}
+.activo {
+	color: olive;
+	filter: blur(0.2px);
+}
+.logo {
+	width: 200px;
+	height: 150px;
+	transition: all 1s;
+	&:hover {
+		filter: blur(1px);
+		transform: scale(1.05);
+	}
+}
