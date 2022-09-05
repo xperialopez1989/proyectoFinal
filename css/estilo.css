@@ -470,9 +470,9 @@ footer {
   .zona1Rec h1 {
     font-size: 3rem; }
   .zona1Rec p {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
     .zona1Rec p .linkExterno {
-      font-size: 1.2rem; }
+      font-size: 1.3rem; }
   .video1 {
     padding-bottom: 0px; }
   .video2 {
@@ -514,7 +514,7 @@ footer {
 
 @media (max-width: 575px) {
   input[type="submit"] {
-    margin-left: 40px; }
+    margin-left: 60px; }
   input[type="reset"] {
     margin-left: 10px; }
   .zona1Con h1 {

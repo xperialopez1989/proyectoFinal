@@ -103,9 +103,9 @@
 			font-size: 3rem;
 		}
 		p {
-			font-size: 1rem;
+			font-size: 1.2rem;
 			.linkExterno {
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 			}
 		}
 	}
@@ -166,7 +166,7 @@
 }
 @media (max-width: 575px) {
 	input[type="submit"] {
-		margin-left: 40px;
+		margin-left: 60px;
 	}
 	input[type="reset"] {
 		margin-left: 10px;
