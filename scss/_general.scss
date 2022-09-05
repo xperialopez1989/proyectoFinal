@@ -1,0 +1,359 @@
+/*CARACTERÍSTICAS COMUNES A TODAS LAS PÁGINAS Y EXCLUSIVAS DE INICIO*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Anek Telugu', sans-serif;
+}
+$font-size: (
+	xl: 6rem,
+	l: 2.5rem,
+	m: 2rem,
+	s: 1.5rem,
+	xs: 1rem,
+);
+
+.inicioZona1 {
+	color: white;
+	background: rgba(0, 0, 0, 0.4) url(../img/meat-charcuterie-fuet-salami-sausages-with-olives-herbs-wooden-background-top-view_89816-37439.jpg);
+	height: 80vh;
+	width: 100vw;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: color-burn;
+	border-bottom: 1px olive solid;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	h1 {
+		font-size: map-get($font-size, xl );
+		font-weight: bold;
+		font-style: oblique;
+	}
+	p {
+		font-size: map-get($font-size, m );
+	}
+}
+.h2Inicio {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: map-get($font-size, l );
+	font-weight: bold;
+}
+.textoInicio {
+	text-align: left;
+	font-size: map-get($font-size, s );
+	line-height: 1.6;
+}
+.inicioZona2, .inicioZona3 {
+	margin: 100px auto;
+}
+.foto1Zona2 {
+	height: 280px;
+	width: 500px;
+	border-radius: 3px;
+}
+.textoZona2 {
+	padding-right: 50px;
+}
+.fondoMedio {
+	background: url(../img/jamoncrudofondonegro.jpg);
+	max-height: 550px;
+	min-height: 400px;
+	height: auto;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.textoZona3 {
+	padding-left: 50px;
+	a {
+		text-decoration: none;
+		color: olive;
+	}
+}
+.contenedorMapaTexto {
+	margin-top: 50px;
+}
+.contactoRapido {
+	text-align: center;
+	padding-top: 10px;
+	p {
+		margin-bottom: 0;
+		font-size: map-get($font-size, s );
+	}
+}
+
+/*******************************************PRODUCTOS*************************************/
+
+.zona1Prod {
+	color: white;
+	background: rgba(0, 0, 0, 0.4) url(../img/tapasfondonegro.jpeg);
+	height: 80vh;
+	width: 100vw;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: color-burn;
+	border-bottom: 1px olive solid;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	h1 {
+		font-size: map-get($font-size, xl );
+		font-weight: bold;
+		font-style: oblique;
+	}
+	p {
+		font-size: map-get($font-size, m );
+	}
+}
+.contenedorEmbFres {
+	height: calc(100vh - 130px);
+	padding-top: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contenedorEmbCur {
+	height: calc(100vh - 130px);
+	padding-top: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 2px solid olive;
+}
+.contenedorEspecial {
+	height: calc(100vh - 130px);
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.imgEmbutidosFrescos {
+	height: 280px;
+	width: 450px;
+	border-radius: 4px;
+	border-top: 5px solid olive;
+	transition: 1s;
+	&:hover {
+		filter: grayscale(60%);
+		transform: scale(1.05);
+	}
+}
+.imgEmbutidosCurados {
+	height: 280px;
+	width: 450px;
+	border-radius: 4px;
+	border-top: 5px solid olive;
+	transition: 1s;
+	&:hover {
+		filter: grayscale(60%);
+		transform: scale(1.05);
+	}
+}
+.imgEspecial {
+	height: 300px;
+	width: 600px;
+	border-radius: 4px;
+	border-top: 5px solid olive;
+	transition: 1s;
+	&:hover {
+		filter: grayscale(60%);
+		transform: scale(1.05);
+	}
+}
+.textProd {
+	font-size: 2.8rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+	padding-bottom: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px olive;
+}
+
+/***********************************************RECETAS***********************************/
+
+.zona1Rec {
+	color: white;
+	background: rgba(0, 0, 0, 0.4) url(../img/tablabresaola.jpg);
+	height: 80vh;
+	width: 100vw;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: color-burn;
+	border-bottom: 1px olive solid;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	h1 {
+		font-size: map-get($font-size, xl );
+		font-weight: bold;
+		font-style: oblique;
+	}
+	p {
+		font-size: map-get($font-size, m );
+		max-width: 600px;
+		text-align: center;
+		padding-bottom: 10px;
+		
+		.linkExterno {
+			color: lightgray;
+			font-size: 1.8rem;
+			text-decoration: none;
+			font-weight: bold;
+		}	
+	}
+}
+.videos {
+	padding-bottom: 50px;
+}
+.video1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.video2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+/*******************************************CAPACITACIÓN**********************************/
+
+.contenedorTextoPpal {
+	padding-top: 120px;
+	padding-right: 10px;
+	background-image: url(../img/tablafiambresfondonegro.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: white;
+	border: black solid 2px;
+	box-shadow: 10px 10px 10px 10px black;
+}
+.texto3Cap {
+	font-size: 3rem;
+	line-height: 1.6;
+	text-transform: capitalize;
+	padding-bottom: 10px;
+	padding-right: 20vw;
+	text-shadow: 10px 10px 10px black;
+}
+.subtitulo1Cap {
+	padding-right: 15vw;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	text-shadow: 10px 10px 10px black;
+}
+.lista1Cap {
+	padding-right: 5vw;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	list-style-type: lower-latin;
+	text-shadow: 10px 10px 10px black;
+}
+.subtitulo2Cap {
+	padding-right: 10vw;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	text-shadow: 10px 10px 10px black;
+}
+.lista2Cap {
+	padding-right: 5vw;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	list-style-type: lower-latin;
+	text-shadow: 10px 10px 10px black;
+}
+
+/**********************************************CONTACTO**********************************/
+
+.zona1Con {
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin-bottom: -40px;
+	h1 {
+		font-size: map-get($font-size, l);
+		font-weight: bold;
+	}
+}
+.contenedorForm {
+	background: rgba(0, 0, 0, 0.4) url(../img/tablabresaola.jpg);
+	background-blend-mode: color-burn;
+	background-size: cover;
+	height: 75vh;
+}
+form {
+	max-width: 380px;
+	font-size: 1.5rem;
+	margin: 0 10px;
+}
+label {
+	display: inline;
+	color: white;
+	font-weight: bold;
+}
+.inputComun {
+	display: block;
+	width: 100%;
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+	opacity: 80%;
+	margin: 5px 0;
+	&:hover {
+		transform: scale(1.02);
+		transition: 1s;
+	}
+}
+input[type="checkbox"] {
+	display: inline;
+	margin: 5px 10px 5px 0;
+}
+input[type="submit"] {
+	height: 30px;
+	width: 98px;
+	font-size: 1.6rem;
+	margin-top: 10px;
+	margin-left: 80px;
+	color: white;
+	background-color: olive;
+	border: 1px solid black;
+	font-weight: bold;
+}
+input[type="reset"] {
+	height: 30px;
+	width: 98px;
+	margin-left: 20px;
+	font-size: 1.6rem;
+	margin-top: 10px;
+	color: white;
+	background-color: olive;
+	border: 1px solid black;
+	font-weight: bold;
+}
+.boton {
+	&:active {
+		transform: translateY(2px);
+	}
+}

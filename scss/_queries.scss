@@ -1,0 +1,179 @@
+
+/*************************GENERAL E INICIO*******************************/
+
+@media (max-width: 767px) {
+	.bordeMenu {
+		border-right: solid 1px transparent;
+	}
+	.inicioZona1 {
+		h1 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+	.logo {
+		margin: -10px 0 -30px 0;
+		width: 150px;
+		height: 115px;
+	}
+	.textoInicio {
+		text-align: center;
+	}
+	.textoZona3 {
+		padding-right: 50px;
+	}
+	.nav-link {
+		font-size: 1.2rem;
+		margin-top: 10px;
+	}
+}
+@media (min-width: 768px) {
+	.container-fluid {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (max-width: 575px) {
+	.h2Inicio {
+		font-size: 2rem;
+	}
+	.textoInicio {
+		font-size: 1.2rem;
+	}
+	.gemeloPie {
+		display: none;
+	}
+	.wpIcon {
+		height: 49px;
+		width: 42px;
+	}
+}
+
+/*************************PRODUCTOS*******************************/
+
+
+@mixin contenedores-comunes {
+	height: auto;
+	padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+	.zona1Prod {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+	.contenedorEmbCur {
+		@include contenedores-comunes;
+	}
+	.contenedorEmbFres {
+		@include contenedores-comunes;
+	}
+	.contenedorEspecial {
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 575px) {
+	.imgEmbutidosFrescos {
+		height: 196px;
+		width: 315px;
+	}
+	.imgEmbutidosCurados {
+		height: 196px;
+		width: 315px;
+	}
+	.imgEspecial {
+		height: 180px;
+		width: 360px;
+	}
+	.textProd {
+		font-size: 2rem;
+	}
+}
+
+/*************************RECETAS*******************************/
+
+@media (max-width: 767px) {
+	.zona1Rec {
+		h1 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 1rem;
+			.linkExterno {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.video1 {
+		padding-bottom: 0px;
+	}
+	.video2 {
+		padding-bottom: 100px;
+	}
+}
+@media (max-width: 480px) {
+	.textoRecetas {
+		width: auto;
+	}
+}
+
+/*************************CAPACITACIÓN*******************************/
+
+@media (max-width: 767px) {
+	.contenedorTextoPpal {
+		padding-bottom: 100px;
+		height: auto;
+		background: rgba(0, 0, 0, 0.6) url(../img/tablafiambresfondonegro.jpg);
+		background-blend-mode: color-burn;
+		background-size: cover;
+	}
+	.texto3Cap {
+		font-size: 2rem;
+	}
+	.subtitulo1Cap {
+		font-size: 2rem;
+	}
+	.subtitulo2Cap {
+		font-size: 2rem;
+	}
+	.lista1Cap {
+		font-size: 1.5rem;
+	}
+	.lista2Cap {
+		font-size: 1.5rem;
+	}
+}
+
+/**********************************************CONTACTO**********************************/
+
+@media (max-width: 767px) {
+	input[type="submit"] {
+		width: 80px;
+		font-size: 1.2rem;
+	}
+	input[type="reset"] {
+		width: 80px;
+		font-size: 1.2rem;
+	}
+	form {
+		font-size: 1.3rem;
+	}
+}
+@media (max-width: 575px) {
+	input[type="submit"] {
+		margin-left: 40px;
+	}
+	input[type="reset"] {
+		margin-left: 10px;
+	}
+	.zona1Con {
+		h1 {
+			font-size: map-get($font-size, m);
+		}
+	}
+}

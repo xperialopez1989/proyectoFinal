@@ -25,10 +25,7 @@ footer {
 	margin-right: 5px;
 }
 .insta {
-	height: 20px;
-	width: 20px;
-	opacity: 90%;
-	margin-left: 5px;
+	@extend .face
 }
 .pie {
 	font-size: 1rem;
