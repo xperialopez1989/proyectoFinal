@@ -26,12 +26,12 @@ header {
 	border-right: olive solid 1px;
 }
 .activo {
-	color: olive;
-	filter: blur(0.2px);
+	font-weight: bold;
+	filter: blur(0.1px);
 }
 .logo {
 	width: 200px;
-	height: 150px;
+	height: 187px;
 	transition: all 1s;
 	&:hover {
 		filter: blur(1px);

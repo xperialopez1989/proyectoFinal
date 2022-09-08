@@ -165,12 +165,6 @@
 	}
 }
 @media (max-width: 575px) {
-	input[type="submit"] {
-		margin-left: 60px;
-	}
-	input[type="reset"] {
-		margin-left: 10px;
-	}
 	.zona1Con {
 		h1 {
 			font-size: map-get($font-size, m);

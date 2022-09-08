@@ -41,27 +41,16 @@ $font-size: (
 		font-size: map-get($font-size, m );
 	}
 }
-.h2Inicio {
-	text-align: center;
-	padding-bottom: 30px;
-	font-size: map-get($font-size, l );
-	font-weight: bold;
-}
-.textoInicio {
-	text-align: left;
-	font-size: map-get($font-size, s );
-	line-height: 1.6;
-}
-.inicioZona2, .inicioZona3 {
+.inicioZona2 {
 	margin: 100px auto;
-}
-.foto1Zona2 {
-	height: 280px;
-	width: 500px;
-	border-radius: 3px;
-}
-.textoZona2 {
-	padding-right: 50px;
+	.foto1Zona2 {
+		height: 280px;
+		width: 500px;
+		border-radius: 3px;
+	}
+	.textoZona2 {
+		padding-right: 50px;
+	}
 }
 .fondoMedio {
 	background: url(../img/jamoncrudofondonegro.jpg);
@@ -74,23 +63,37 @@ $font-size: (
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-.textoZona3 {
-	padding-left: 50px;
-	a {
-		text-decoration: none;
-		color: olive;
+.inicioZona3 {
+	margin: 100px auto;
+	.textoZona3 {
+		padding-left: 50px;
+		a {
+			text-decoration: none;
+			color: olive;
+		}
+	}
+	.contenedorMapaTexto {
+		margin-top: 50px;
+	}
+	.contactoRapido {
+		text-align: center;
+		padding-top: 10px;
+		p {
+			margin-bottom: 0;
+			font-size: map-get($font-size, s );
+		}
 	}
 }
-.contenedorMapaTexto {
-	margin-top: 50px;
-}
-.contactoRapido {
+.h2Inicio {
 	text-align: center;
-	padding-top: 10px;
-	p {
-		margin-bottom: 0;
-		font-size: map-get($font-size, s );
-	}
+	padding-bottom: 30px;
+	font-size: map-get($font-size, l );
+	font-weight: bold;
+}
+.textoInicio {
+	text-align: left;
+	font-size: map-get($font-size, s );
+	line-height: 1.6;
 }
 
 /*******************************************PRODUCTOS*************************************/
@@ -115,9 +118,6 @@ $font-size: (
 		font-weight: bold;
 		font-style: oblique;
 	}
-	p {
-		font-size: map-get($font-size, m );
-	}
 }
 .contenedorEmbFres {
 	height: calc(100vh - 130px);
@@ -125,6 +125,17 @@ $font-size: (
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	.imgEmbutidosFrescos {
+		height: 280px;
+		width: 450px;
+		border-radius: 4px;
+		border-top: 4px solid olive;
+		transition: 1s;
+		&:hover {
+			filter: grayscale(60%);
+			transform: scale(1.05);
+		}
+	}
 }
 .contenedorEmbCur {
 	height: calc(100vh - 130px);
@@ -133,6 +144,17 @@ $font-size: (
 	flex-direction: column;
 	align-items: center;
 	border-bottom: 2px solid olive;
+	.imgEmbutidosCurados {
+		height: 280px;
+		width: 450px;
+		border-radius: 4px;
+		border-top: 4px solid olive;
+		transition: 1s;
+		&:hover {
+			filter: grayscale(60%);
+			transform: scale(1.05);
+		}
+	}
 }
 .contenedorEspecial {
 	height: calc(100vh - 130px);
@@ -140,38 +162,16 @@ $font-size: (
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-.imgEmbutidosFrescos {
-	height: 280px;
-	width: 450px;
-	border-radius: 4px;
-	border-top: 5px solid olive;
-	transition: 1s;
-	&:hover {
-		filter: grayscale(60%);
-		transform: scale(1.05);
-	}
-}
-.imgEmbutidosCurados {
-	height: 280px;
-	width: 450px;
-	border-radius: 4px;
-	border-top: 5px solid olive;
-	transition: 1s;
-	&:hover {
-		filter: grayscale(60%);
-		transform: scale(1.05);
-	}
-}
-.imgEspecial {
-	height: 300px;
-	width: 600px;
-	border-radius: 4px;
-	border-top: 5px solid olive;
-	transition: 1s;
-	&:hover {
-		filter: grayscale(60%);
-		transform: scale(1.05);
+	.imgEspecial {
+		height: 300px;
+		width: 600px;
+		border-radius: 4px;
+		border-top: 5px solid olive;
+		transition: 1s;
+		&:hover {
+			filter: grayscale(60%);
+			transform: scale(1.05);
+		}
 	}
 }
 .textProd {
@@ -291,17 +291,20 @@ $font-size: (
 	color: white;
 	display: flex;
 	justify-content: center;
-	margin-bottom: -40px;
+	margin-bottom: 50px;
 	h1 {
 		font-size: map-get($font-size, l);
 		font-weight: bold;
 	}
 }
 .contenedorForm {
-	background: rgba(0, 0, 0, 0.4) url(../img/tablabresaola.jpg);
+	background: rgba(0, 0, 0, 0.4) url(../img/tablajamoncrudo.jpg);
 	background-blend-mode: color-burn;
 	background-size: cover;
-	height: 75vh;
+	background-repeat: no-repeat;
+	height: 80vh;
+	background-attachment: fixed;
+	background-position: center;
 }
 form {
 	max-width: 380px;
@@ -328,31 +331,17 @@ label {
 }
 input[type="checkbox"] {
 	display: inline;
-	margin: 5px 10px 5px 0;
-}
-input[type="submit"] {
-	height: 30px;
-	width: 98px;
-	font-size: 1.6rem;
-	margin-top: 10px;
-	margin-left: 80px;
-	color: white;
-	background-color: olive;
-	border: 1px solid black;
-	font-weight: bold;
-}
-input[type="reset"] {
-	height: 30px;
-	width: 98px;
-	margin-left: 20px;
-	font-size: 1.6rem;
-	margin-top: 10px;
-	color: white;
-	background-color: olive;
-	border: 1px solid black;
-	font-weight: bold;
+	margin: 15px 10px 15px 0;
 }
 .boton {
+	height: 30px;
+	width: 98px;
+	color: white;
+	background-color: olive;
+	border: 1px solid black;
+	font-weight: bold;
+	border-radius: 2px;
+	padding-top: 4px;
 	&:active {
 		transform: translateY(2px);
 	}

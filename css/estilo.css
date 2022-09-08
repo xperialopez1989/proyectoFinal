@@ -33,27 +33,14 @@ body {
   .inicioZona1 p {
     font-size: 2rem; }
 
-.h2Inicio {
-  text-align: center;
-  padding-bottom: 30px;
-  font-size: 2.5rem;
-  font-weight: bold; }
-
-.textoInicio {
-  text-align: left;
-  font-size: 1.5rem;
-  line-height: 1.6; }
-
-.inicioZona2, .inicioZona3 {
+.inicioZona2 {
   margin: 100px auto; }
-
-.foto1Zona2 {
-  height: 280px;
-  width: 500px;
-  border-radius: 3px; }
-
-.textoZona2 {
-  padding-right: 50px; }
+  .inicioZona2 .foto1Zona2 {
+    height: 280px;
+    width: 500px;
+    border-radius: 3px; }
+  .inicioZona2 .textoZona2 {
+    padding-right: 50px; }
 
 .fondoMedio {
   background: url(../img/jamoncrudofondonegro.jpg);
@@ -66,21 +53,32 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.textoZona3 {
-  padding-left: 50px; }
-  .textoZona3 a {
-    text-decoration: none;
-    color: olive; }
+.inicioZona3 {
+  margin: 100px auto; }
+  .inicioZona3 .textoZona3 {
+    padding-left: 50px; }
+    .inicioZona3 .textoZona3 a {
+      text-decoration: none;
+      color: olive; }
+  .inicioZona3 .contenedorMapaTexto {
+    margin-top: 50px; }
+  .inicioZona3 .contactoRapido {
+    text-align: center;
+    padding-top: 10px; }
+    .inicioZona3 .contactoRapido p {
+      margin-bottom: 0;
+      font-size: 1.5rem; }
 
-.contenedorMapaTexto {
-  margin-top: 50px; }
-
-.contactoRapido {
+.h2Inicio {
   text-align: center;
-  padding-top: 10px; }
-  .contactoRapido p {
-    margin-bottom: 0;
-    font-size: 1.5rem; }
+  padding-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.textoInicio {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.6; }
 
 /*******************************************PRODUCTOS*************************************/
 .zona1Prod {
@@ -102,8 +100,6 @@ body {
     font-size: 6rem;
     font-weight: bold;
     font-style: oblique; }
-  .zona1Prod p {
-    font-size: 2rem; }
 
 .contenedorEmbFres {
   height: calc(100vh - 130px);
@@ -111,6 +107,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .contenedorEmbFres .imgEmbutidosFrescos {
+    height: 280px;
+    width: 450px;
+    border-radius: 4px;
+    border-top: 4px solid olive;
+    transition: 1s; }
+    .contenedorEmbFres .imgEmbutidosFrescos:hover {
+      filter: grayscale(60%);
+      transform: scale(1.05); }
 
 .contenedorEmbCur {
   height: calc(100vh - 130px);
@@ -119,6 +124,15 @@ body {
   flex-direction: column;
   align-items: center;
   border-bottom: 2px solid olive; }
+  .contenedorEmbCur .imgEmbutidosCurados {
+    height: 280px;
+    width: 450px;
+    border-radius: 4px;
+    border-top: 4px solid olive;
+    transition: 1s; }
+    .contenedorEmbCur .imgEmbutidosCurados:hover {
+      filter: grayscale(60%);
+      transform: scale(1.05); }
 
 .contenedorEspecial {
   height: calc(100vh - 130px);
@@ -126,36 +140,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.imgEmbutidosFrescos {
-  height: 280px;
-  width: 450px;
-  border-radius: 4px;
-  border-top: 5px solid olive;
-  transition: 1s; }
-  .imgEmbutidosFrescos:hover {
-    filter: grayscale(60%);
-    transform: scale(1.05); }
-
-.imgEmbutidosCurados {
-  height: 280px;
-  width: 450px;
-  border-radius: 4px;
-  border-top: 5px solid olive;
-  transition: 1s; }
-  .imgEmbutidosCurados:hover {
-    filter: grayscale(60%);
-    transform: scale(1.05); }
-
-.imgEspecial {
-  height: 300px;
-  width: 600px;
-  border-radius: 4px;
-  border-top: 5px solid olive;
-  transition: 1s; }
-  .imgEspecial:hover {
-    filter: grayscale(60%);
-    transform: scale(1.05); }
+  .contenedorEspecial .imgEspecial {
+    height: 300px;
+    width: 600px;
+    border-radius: 4px;
+    border-top: 5px solid olive;
+    transition: 1s; }
+    .contenedorEspecial .imgEspecial:hover {
+      filter: grayscale(60%);
+      transform: scale(1.05); }
 
 .textProd {
   font-size: 2.8rem;
@@ -264,16 +257,19 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-  margin-bottom: -40px; }
+  margin-bottom: 50px; }
   .zona1Con h1 {
     font-size: 2.5rem;
     font-weight: bold; }
 
 .contenedorForm {
-  background: rgba(0, 0, 0, 0.4) url(../img/tablabresaola.jpg);
+  background: rgba(0, 0, 0, 0.4) url(../img/tablajamoncrudo.jpg);
   background-blend-mode: color-burn;
   background-size: cover;
-  height: 75vh; }
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center; }
 
 form {
   max-width: 380px;
@@ -299,32 +295,19 @@ label {
 
 input[type="checkbox"] {
   display: inline;
-  margin: 5px 10px 5px 0; }
+  margin: 15px 10px 15px 0; }
 
-input[type="submit"] {
+.boton {
   height: 30px;
   width: 98px;
-  font-size: 1.6rem;
-  margin-top: 10px;
-  margin-left: 80px;
   color: white;
   background-color: olive;
   border: 1px solid black;
-  font-weight: bold; }
-
-input[type="reset"] {
-  height: 30px;
-  width: 98px;
-  margin-left: 20px;
-  font-size: 1.6rem;
-  margin-top: 10px;
-  color: white;
-  background-color: olive;
-  border: 1px solid black;
-  font-weight: bold; }
-
-.boton:active {
-  transform: translateY(2px); }
+  font-weight: bold;
+  border-radius: 2px;
+  padding-top: 4px; }
+  .boton:active {
+    transform: translateY(2px); }
 
 header {
   color: white;
@@ -352,12 +335,12 @@ header {
   border-right: olive solid 1px; }
 
 .activo {
-  color: olive;
-  filter: blur(0.2px); }
+  font-weight: bold;
+  filter: blur(0.1px); }
 
 .logo {
   width: 200px;
-  height: 150px;
+  height: 187px;
   transition: all 1s; }
   .logo:hover {
     filter: blur(1px);
@@ -373,8 +356,8 @@ footer {
   padding-bottom: 5px; }
 
 .wpIcon {
-  height: 70px;
-  width: 60px;
+  height: 75px;
+  width: 61px;
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -394,7 +377,8 @@ footer {
   opacity: 80%;
   display: inline-block;
   width: 200px;
-  padding-left: 5px; }
+  padding-left: 5px;
+  margin-bottom: 0px; }
 
 .gemeloPie {
   display: inline-block;
@@ -513,9 +497,5 @@ footer {
     font-size: 1.3rem; } }
 
 @media (max-width: 575px) {
-  input[type="submit"] {
-    margin-left: 60px; }
-  input[type="reset"] {
-    margin-left: 10px; }
   .zona1Con h1 {
     font-size: 2rem; } }

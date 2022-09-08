@@ -62,12 +62,13 @@
         </div>
       </nav>
     </header>
+    
+    <div
+      class="contenedorForm d-flex flex-column justify-content-center align-items-center"
+    >
     <div class="zona1Con">
       <h1>Comunicate con nosotros</h1>
     </div>
-    <div
-      class="contenedorForm d-flex justify-content-center align-items-center"
-    >
       <form>
         <label for="nombre">Nombre</label>
         <input
@@ -102,15 +103,17 @@
           name="mensaje"
           id="mensaje"
         ></textarea>
-        <input type="checkbox" name="acepta" value="1" />
+        <input type="checkbox" id="acepta" value="1" />
         <label for="acepta">Deseo recibir promociones en mi correo</label>
+        <div class="d-flex justify-content-evenly">
         <input class="boton" type="submit" />
         <input class="boton" type="reset" />
+       </div>
       </form>
     </div>
     <img class="wpIcon" src="../img/greywpicon.png" alt="icono Whatsapp" />
     <footer>
-      <h3 class="pie">Sitio web creado por Santiago López</h3>
+      <p class="pie">© Sitio web creado por Santiago López</P>
       <div class="redes">
         <img class="face" src="../img/logoface.png" alt="logo Facebook" />
         <img class="insta" src="../img/logoinsta.png" alt="logo Instagram" />
