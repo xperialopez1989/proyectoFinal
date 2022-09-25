@@ -10,7 +10,8 @@ body {
 	font-family: 'Anek Telugu', sans-serif;
 }
 $font-size: (
-	xl: 6rem,
+	xxl: 6rem,
+	xl: 4rem,
 	l: 2.5rem,
 	m: 2rem,
 	s: 1.5rem,
@@ -33,7 +34,7 @@ $font-size: (
 	background-attachment: fixed;
 	background-position: center;
 	h1 {
-		font-size: map-get($font-size, xl );
+		font-size: map-get($font-size, xxl );
 		font-weight: bold;
 		font-style: oblique;
 	}
@@ -71,9 +72,6 @@ $font-size: (
 			text-decoration: none;
 			color: olive;
 		}
-	}
-	.contenedorMapaTexto {
-		margin-top: 50px;
 	}
 	.contactoRapido {
 		text-align: center;
@@ -114,7 +112,7 @@ $font-size: (
 	background-attachment: fixed;
 	background-position: center;
 	h1 {
-		font-size: map-get($font-size, xl );
+		font-size: map-get($font-size, xxl );
 		font-weight: bold;
 		font-style: oblique;
 	}
@@ -175,7 +173,7 @@ $font-size: (
 	}
 }
 .textProd {
-	font-size: 2.8rem;
+	font-size: map-get($font-size, l );
 	text-transform: uppercase;
 	font-weight: lighter;
 	padding-bottom: 20px;
@@ -201,7 +199,7 @@ $font-size: (
 	background-attachment: fixed;
 	background-position: center;
 	h1 {
-		font-size: map-get($font-size, xl );
+		font-size: map-get($font-size, xxl );
 		font-weight: bold;
 		font-style: oblique;
 	}
@@ -213,7 +211,7 @@ $font-size: (
 		
 		.linkExterno {
 			color: lightgray;
-			font-size: 1.8rem;
+			font-size: map-get($font-size, s );
 			text-decoration: none;
 			font-weight: bold;
 		}	
@@ -221,6 +219,19 @@ $font-size: (
 }
 .videos {
 	padding-bottom: 50px;
+}
+.h2Recetas {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: map-get($font-size, l );
+	font-weight: bold;
+	padding-bottom: 10px;
+}	
+.textoRecetas {
+	text-align: center;
+	font-size: map-get($font-size, s );
+	line-height: 1.6;
+	padding: 0 30px;
 }
 .video1 {
 	display: flex;
@@ -238,51 +249,45 @@ $font-size: (
 }
 
 /*******************************************CAPACITACIÓN**********************************/
-
-.contenedorTextoPpal {
-	padding-top: 120px;
-	padding-right: 10px;
-	background-image: url(../img/tablafiambresfondonegro.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
+.zona1Cap {
 	color: white;
-	border: black solid 2px;
-	box-shadow: 10px 10px 10px 10px black;
+	background: rgba(0, 0, 0, 0.4) url(../img/tablafiambresfondonegro.jpg);
+	height: 80vh;
+	width: 100vw;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: color-burn;
+	border-bottom: 1px olive solid;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	h1 {
+		font-size: map-get($font-size, xxl );
+		font-weight: bold;
+		font-style: oblique;
+	}
 }
-.texto3Cap {
-	font-size: 3rem;
-	line-height: 1.6;
-	text-transform: capitalize;
-	padding-bottom: 10px;
-	padding-right: 20vw;
-	text-shadow: 10px 10px 10px black;
+.tituloCap {
+	font-size: map-get($font-size, xl );
+	padding: 30px 0px;
 }
-.subtitulo1Cap {
-	padding-right: 15vw;
-	font-size: 2.5rem;
-	line-height: 1.6;
-	text-shadow: 10px 10px 10px black;
+.subtituloCap {
+	font-size: map-get($font-size, l );
+	font-weight: bold;
 }
-.lista1Cap {
-	padding-right: 5vw;
-	font-size: 2.5rem;
-	line-height: 1.6;
-	list-style-type: lower-latin;
-	text-shadow: 10px 10px 10px black;
+.curso1, .curso2 {
+	text-align: center;
 }
-.subtitulo2Cap {
-	padding-right: 10vw;
-	font-size: 2.5rem;
-	line-height: 1.6;
-	text-shadow: 10px 10px 10px black;
+.lista1Cap, .lista2Cap {
+	display: inline-block;
+	text-align: left;
+	font-size: map-get($font-size, m );
 }
-.lista2Cap {
-	padding-right: 5vw;
-	font-size: 2.5rem;
-	line-height: 1.6;
-	list-style-type: lower-latin;
-	text-shadow: 10px 10px 10px black;
+.carousel img {
+	margin: 50px auto;
 }
 
 /**********************************************CONTACTO**********************************/
@@ -293,7 +298,7 @@ $font-size: (
 	justify-content: center;
 	margin-bottom: 50px;
 	h1 {
-		font-size: map-get($font-size, l);
+		font-size: map-get($font-size, xl);
 		font-weight: bold;
 	}
 }
@@ -308,7 +313,7 @@ $font-size: (
 }
 form {
 	max-width: 380px;
-	font-size: 1.5rem;
+	font-size: map-get($font-size, s );
 	margin: 0 10px;
 }
 label {

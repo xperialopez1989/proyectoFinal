@@ -60,8 +60,6 @@ body {
     .inicioZona3 .textoZona3 a {
       text-decoration: none;
       color: olive; }
-  .inicioZona3 .contenedorMapaTexto {
-    margin-top: 50px; }
   .inicioZona3 .contactoRapido {
     text-align: center;
     padding-top: 10px; }
@@ -151,7 +149,7 @@ body {
       transform: scale(1.05); }
 
 .textProd {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: lighter;
   padding-bottom: 20px;
@@ -185,12 +183,25 @@ body {
     padding-bottom: 10px; }
     .zona1Rec p .linkExterno {
       color: lightgray;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       text-decoration: none;
       font-weight: bold; }
 
 .videos {
   padding-bottom: 50px; }
+
+.h2Recetas {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+.textoRecetas {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding: 0 30px; }
 
 .video1 {
   display: flex;
@@ -207,50 +218,44 @@ body {
   padding-bottom: 50px; }
 
 /*******************************************CAPACITACIÓN**********************************/
-.contenedorTextoPpal {
-  padding-top: 120px;
-  padding-right: 10px;
-  background-image: url(../img/tablafiambresfondonegro.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+.zona1Cap {
   color: white;
-  border: black solid 2px;
-  box-shadow: 10px 10px 10px 10px black; }
+  background: rgba(0, 0, 0, 0.4) url(../img/tablafiambresfondonegro.jpg);
+  height: 80vh;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: color-burn;
+  border-bottom: 1px olive solid;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+  .zona1Cap h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: oblique; }
 
-.texto3Cap {
-  font-size: 3rem;
-  line-height: 1.6;
-  text-transform: capitalize;
-  padding-bottom: 10px;
-  padding-right: 20vw;
-  text-shadow: 10px 10px 10px black; }
+.tituloCap {
+  font-size: 4rem;
+  padding: 30px 0px; }
 
-.subtitulo1Cap {
-  padding-right: 15vw;
+.subtituloCap {
   font-size: 2.5rem;
-  line-height: 1.6;
-  text-shadow: 10px 10px 10px black; }
+  font-weight: bold; }
 
-.lista1Cap {
-  padding-right: 5vw;
-  font-size: 2.5rem;
-  line-height: 1.6;
-  list-style-type: lower-latin;
-  text-shadow: 10px 10px 10px black; }
+.curso1, .curso2 {
+  text-align: center; }
 
-.subtitulo2Cap {
-  padding-right: 10vw;
-  font-size: 2.5rem;
-  line-height: 1.6;
-  text-shadow: 10px 10px 10px black; }
+.lista1Cap, .lista2Cap {
+  display: inline-block;
+  text-align: left;
+  font-size: 2rem; }
 
-.lista2Cap {
-  padding-right: 5vw;
-  font-size: 2.5rem;
-  line-height: 1.6;
-  list-style-type: lower-latin;
-  text-shadow: 10px 10px 10px black; }
+.carousel img {
+  margin: 50px auto; }
 
 /**********************************************CONTACTO**********************************/
 .zona1Con {
@@ -259,7 +264,7 @@ body {
   justify-content: center;
   margin-bottom: 50px; }
   .zona1Con h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: bold; }
 
 .contenedorForm {
@@ -316,7 +321,7 @@ header {
 
 .nav-link {
   color: black;
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   height: 1.5rem;
@@ -390,31 +395,40 @@ footer {
   .bordeMenu {
     border-right: solid 1px transparent; }
   .inicioZona1 h1 {
-    font-size: 3rem; }
+    font-size: 4rem; }
   .inicioZona1 p {
-    font-size: 1rem; }
+    font-size: 1.5rem; }
   .logo {
     margin: -10px 0 -30px 0;
     width: 150px;
     height: 115px; }
   .textoInicio {
     text-align: center; }
+  .textoZona2 {
+    padding-left: 50px;
+    margin-top: 50px; }
   .textoZona3 {
     padding-right: 50px; }
+  .contenedorMapaTexto {
+    margin-top: 50px; }
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 10px; } }
 
 @media (min-width: 768px) {
   .container-fluid {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .textoZona2 {
+    padding-right: 50px; } }
 
 @media (max-width: 575px) {
+  .inicioZona1 h1 {
+    font-size: 2.5rem; }
   .h2Inicio {
     font-size: 2rem; }
   .textoInicio {
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
   .gemeloPie {
     display: none; }
   .wpIcon {
@@ -424,7 +438,7 @@ footer {
 /*************************PRODUCTOS*******************************/
 @media (max-width: 767px) {
   .zona1Prod h1 {
-    font-size: 3rem; }
+    font-size: 4rem; }
   .contenedorEmbCur {
     height: auto;
     padding-top: 50px; }
@@ -437,6 +451,8 @@ footer {
     padding-bottom: 50px; } }
 
 @media (max-width: 575px) {
+  .zona1Prod h1 {
+    font-size: 2.5rem; }
   .imgEmbutidosFrescos {
     height: 196px;
     width: 315px; }
@@ -452,11 +468,11 @@ footer {
 /*************************RECETAS*******************************/
 @media (max-width: 767px) {
   .zona1Rec h1 {
-    font-size: 3rem; }
+    font-size: 4rem; }
   .zona1Rec p {
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
     .zona1Rec p .linkExterno {
-      font-size: 1.3rem; }
+      font-size: 1.5rem; }
   .video1 {
     padding-bottom: 0px; }
   .video2 {
@@ -464,38 +480,36 @@ footer {
 
 @media (max-width: 480px) {
   .textoRecetas {
-    width: auto; } }
+    width: auto; }
+  .zona1Rec h1 {
+    font-size: 2.5rem; } }
 
 /*************************CAPACITACIÓN*******************************/
 @media (max-width: 767px) {
-  .contenedorTextoPpal {
-    padding-bottom: 100px;
-    height: auto;
-    background: rgba(0, 0, 0, 0.6) url(../img/tablafiambresfondonegro.jpg);
-    background-blend-mode: color-burn;
-    background-size: cover; }
-  .texto3Cap {
+  .zona1Cap h1 {
+    font-size: 4rem; }
+  .tituloCap {
+    font-size: 2.5rem; }
+  .subtituloCap {
     font-size: 2rem; }
-  .subtitulo1Cap {
-    font-size: 2rem; }
-  .subtitulo2Cap {
-    font-size: 2rem; }
-  .lista1Cap {
-    font-size: 1.5rem; }
-  .lista2Cap {
+  .lista1Cap, .lista2Cap {
     font-size: 1.5rem; } }
+
+@media (max-width: 575px) {
+  .zona1Cap h1 {
+    font-size: 2.5rem; } }
 
 /**********************************************CONTACTO**********************************/
 @media (max-width: 767px) {
   input[type="submit"] {
     width: 80px;
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
   input[type="reset"] {
     width: 80px;
-    font-size: 1.2rem; }
+    font-size: 1.5rem; }
   form {
-    font-size: 1.3rem; } }
+    font-size: 1.5rem; } }
 
 @media (max-width: 575px) {
   .zona1Con h1 {
-    font-size: 2rem; } }
+    font-size: 2.5rem; } }
